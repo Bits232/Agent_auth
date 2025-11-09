@@ -108,9 +108,8 @@ http://localhost:8000
 
 ## Ensure your Timescale/PostgreSQL database has the required extensions:
 
-bash
-CREATE EXTENSION IF NOT EXISTS pg_text_search;
--- Other required extensions will be initialized by setup_tiger_features()
+**CREATE EXTENSION IF NOT EXISTS pg_text_search;**
+**-- Other required extensions will be initialized by setup_tiger_features()**
 
 **Groq API**
 **Sign up at Groq Cloud**
