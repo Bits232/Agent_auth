@@ -1,42 +1,44 @@
-Agent Auth: AI-Powered Authentication Security
-Intelligent, database-native protection against authentication attacks
+# Agent Auth: AI-Powered Authentication Security
 
-Agent Auth is a revolutionary authentication security system built on Agentic Postgres that uses collaborative AI agents to detect and prevent SQL injection, credential stuffing, and sophisticated authentication attacks in real-time.
+**Intelligent, database-native protection against authentication attacks**
 
-🚀 What is Agent Auth?
-Traditional security measures rely on static rules and pattern matching, but attackers constantly evolve their techniques. Agent Auth introduces a two-tier intelligent security system:
+Agent Auth is a revolutionary authentication security system built on **Agentic Postgres** that uses collaborative AI agents to detect and prevent SQL injection, credential stuffing, and sophisticated authentication attacks in real-time.
 
-🛡️ High-Speed Sentry: Uses pg_text_search for instant detection of known attack patterns
+## 🚀 What is Agent Auth?
 
-🔍 Intelligent Investigator: Leverages Groq AI to analyze novel, sophisticated threats
+Traditional security measures rely on static rules and pattern matching, but attackers constantly evolve their techniques. Agent Auth introduces a **two-tier intelligent security system**:
 
-🧠 Adaptive Learning: The system continuously improves by learning from new attacks
+- **🛡️ High-Speed Sentry**: Uses `pg_text_search` for instant detection of known attack patterns
+- **🔍 Intelligent Investigator**: Leverages Groq AI to analyze novel, sophisticated threats  
+- **🧠 Adaptive Learning**: The system continuously improves by learning from new attacks
 
-Built on Timescale Postgres, Agent Auth demonstrates the power of Agentic Postgres as an intelligent, collaborative security brain rather than just a passive database.
+Built on **Timescale Postgres**, Agent Auth demonstrates the power of Agentic Postgres as an intelligent, collaborative security brain rather than just a passive database.
 
-🏗️ Architecture
-text
+## 🏗️ Architecture
 Authentication Request
-         ↓
+↓
 [Agent Auth Security Layer]
-         ├── Tier 1: pg_text-search (Instant pattern matching)
-         └── Tier 2: Groq AI (Sophisticated threat analysis)
-         ↓
+├── Tier 1: pg_text-search (Instant pattern matching)
+└── Tier 2: Groq AI (Sophisticated threat analysis)
+↓
 [Block | Allow] + Pattern Learning
-⚡ Quick Start
-Prerequisites
-Python 3.8+
 
-PostgreSQL/Timescale Database
+text
 
-Groq API Account
+## ⚡ Quick Start
 
-Installation
-Clone the repository
+### Prerequisites
 
-bash
-git clone https://github.com/yourusername/agent-auth.git
-cd agent-auth
+- Python 3.8+
+- PostgreSQL/Timescale Database  
+- Groq API Account
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Bits232/Agent_auth.git
+   cd agent-auth
 Create and configure environment file
 
 bash
@@ -154,4 +156,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
 Agent Auth: Intelligent authentication security, powered by Agentic Postgres.
-
