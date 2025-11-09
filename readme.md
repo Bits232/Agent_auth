@@ -95,7 +95,7 @@ http://localhost:8000
 
 **🎪 Easy Integration: Drop-in security layer for Django applications**
 
-##🏆 Built With
+## 🏆 Built With
 **Agentic Postgres - Intelligent database foundation**
 
 **TimescaleDB - High-performance time-series data**
