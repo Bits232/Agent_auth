@@ -14,17 +14,6 @@ Traditional security measures rely on static rules and pattern matching, but att
 
 Built on **Timescale Postgres**, Agent Auth demonstrates the power of Agentic Postgres as an intelligent, collaborative security brain rather than just a passive database.
 
-## 🏗️ Architecture
-Authentication Request
-↓
-[Agent Auth Security Layer]
-├── Tier 1: pg_text-search (Instant pattern matching)
-└── Tier 2: Groq AI (Sophisticated threat analysis)
-↓
-[Block | Allow] + Pattern Learning
-
-text
-
 ## ⚡ Quick Start
 
 ### Prerequisites
@@ -62,7 +51,7 @@ Initialize Agentic Postgres Features
 
 bash
 python manage.py shell
-In the Python shell:
+## In the Python shell:
 
 python
 from Agent_auth_app.tiger_setup import setup_tiger_features
@@ -76,7 +65,7 @@ Access the application
 
 text
 http://localhost:8000
-🛡️ How It Works
+## 🛡️ How It Works
 Real-Time Attack Detection
 Instant Pattern Matching: Uses pg_text_search to identify known attack signatures at database speed
 
@@ -84,7 +73,7 @@ AI-Powered Analysis: For sophisticated attacks, Groq AI analyzes intent and cont
 
 Adaptive Learning: New attack patterns are learned and added to the detection system
 
-Supported Attack Types
+## Supported Attack Types
 ✅ SQL Injection (basic and obfuscated)
 
 ✅ Credential stuffing attempts
@@ -93,7 +82,7 @@ Supported Attack Types
 
 ✅ Behavioral anomalies
 
-🎯 Key Features
+## 🎯 Key Features
 ⚡ Near-Zero Latency: Legitimate users experience no slowdown
 
 🤖 Multi-Agent Collaboration: pg_text-search and Groq AI work in tandem
@@ -126,7 +115,7 @@ agent-auth/
 └── manage.py            # Django management
 🔧 Configuration
 Database Setup
-Ensure your Timescale/PostgreSQL database has the required extensions:
+## Ensure your Timescale/PostgreSQL database has the required extensions:
 
 sql
 CREATE EXTENSION IF NOT EXISTS pg_text_search;
@@ -138,7 +127,7 @@ Obtain your API key
 
 Add it to your .env file
 
-🚨 Security Notes
+## 🚨 Security Notes
 Always set DEBUG=False in production
 
 Use strong secret keys
@@ -149,10 +138,10 @@ Monitor security logs
 
 Keep dependencies updated
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🤝 Contributing
+## 🤝 Contributing
 We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
 Agent Auth: Intelligent authentication security, powered by Agentic Postgres.
