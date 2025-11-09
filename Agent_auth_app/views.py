@@ -7,11 +7,11 @@ import json
 from .security_checker import SecurityChecker
 
 def landing(request):
-    """Beautiful landing page"""
+    """landing page"""
     return render(request, 'landing.html')
 
 def demo(request):
-    """Security demo page"""
+    """demo page"""
     return render(request, 'demo.html')
 
 @csrf_exempt

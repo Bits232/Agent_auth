@@ -20,7 +20,7 @@ from django.conf.urls import static
 from django.conf import settings
 
 urlpatterns = [
-    path('super-admin-portal/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('',include('Agent_auth_app.urls'))
 ]
 # Agent_auth_app/urls.py
