@@ -28,23 +28,23 @@ Built on **Timescale Postgres**, Agent Auth demonstrates the power of Agentic Po
    ```bash
    git clone https://github.com/Bits232/Agent_auth.git
    cd agent-auth
-Create and configure environment file
+## Create and configure environment file
 
 bash
 cp .env.example .env
 Edit .env with your configuration:
 
-env
-SECRET_KEY='your-django-secret-key'
-DEBUG='False'
-DB_NAME='your-database-name'
-DB_USER='your-database-user'
-DB_PASSWORD='your-database-password'
-DB_HOST='your-database-host'
-DB_PORT='5432'
-GROQ_API_KEY='your-groq-api-key'
-Install dependencies
+## env
+**SECRET_KEY='your-django-secret-key'**
+**DEBUG='False'**
+**DB_NAME='your-database-name'**
+**DB_USER='your-database-user'**
+**DB_PASSWORD='your-database-password'**
+**DB_HOST='your-database-host'**
+**DB_PORT='5432'**
+**GROQ_API_KEY='your-groq-api-key'**
 
+## Install dependencies
 bash
 pip install -r requirements.txt
 Initialize Agentic Postgres Features
@@ -53,11 +53,12 @@ bash
 python manage.py shell
 ## In the Python shell:
 
-python
+bash
 from Agent_auth_app.tiger_setup import setup_tiger_features
 setup_tiger_features()
 exit()
-Run the development server
+
+## Run the development server
 
 bash
 python manage.py runserver
@@ -66,82 +67,73 @@ Access the application
 text
 http://localhost:8000
 ## 🛡️ How It Works
-Real-Time Attack Detection
-Instant Pattern Matching: Uses pg_text_search to identify known attack signatures at database speed
+**Real-Time Attack Detection**
 
-AI-Powered Analysis: For sophisticated attacks, Groq AI analyzes intent and context
+**Instant Pattern Matching: Uses pg_text_search to identify known attack signatures at database speed**
 
-Adaptive Learning: New attack patterns are learned and added to the detection system
+**AI-Powered Analysis: For sophisticated attacks, Groq AI analyzes intent and context**
+
+**Adaptive Learning: New attack patterns are learned and added to the detection system**
 
 ## Supported Attack Types
-✅ SQL Injection (basic and obfuscated)
+**✅ SQL Injection (basic and obfuscated)**
 
-✅ Credential stuffing attempts
+**✅ Credential stuffing attempts**
 
-✅ Novel payload patterns
+**✅ Novel payload patterns**
 
-✅ Behavioral anomalies
+**✅ Behavioral anomalies**
 
 ## 🎯 Key Features
-⚡ Near-Zero Latency: Legitimate users experience no slowdown
+**⚡ Near-Zero Latency: Legitimate users experience no slowdown**
 
-🤖 Multi-Agent Collaboration: pg_text-search and Groq AI work in tandem
+**🤖 Multi-Agent Collaboration: pg_text-search and Groq AI work in tandem**
 
-📈 Continuous Learning: System improves with each detected attack
+**📈 Continuous Learning: System improves with each detected attack**
 
-🔒 Database-Native Security: Intelligence lives where the data lives
+**🔒 Database-Native Security: Intelligence lives where the data lives**
 
-🎪 Easy Integration: Drop-in security layer for Django applications
+**🎪 Easy Integration: Drop-in security layer for Django applications**
 
-🏆 Built With
-Agentic Postgres - Intelligent database foundation
+##🏆 Built With
+**Agentic Postgres - Intelligent database foundation**
 
-TimescaleDB - High-performance time-series data
+**TimescaleDB - High-performance time-series data**
 
-pg_text_search - Real-time pattern matching
+**pg_text_search - Real-time pattern matching**
 
-Groq AI - Sophisticated threat analysis
+**Groq AI - Sophisticated threat analysis**
 
-Django - Web framework
+**Django - Web framework**
 
-📁 Project Structure
-text
-agent-auth/
-├── Agent_auth_app/
-│   ├── tiger_setup.py    # Agentic Postgres initialization
-│   ├── security/         # Core security logic
-│   └── models.py         # Database models
-├── requirements.txt      # Python dependencies
-└── manage.py            # Django management
-🔧 Configuration
-Database Setup
 ## Ensure your Timescale/PostgreSQL database has the required extensions:
 
-sql
+bash
 CREATE EXTENSION IF NOT EXISTS pg_text_search;
 -- Other required extensions will be initialized by setup_tiger_features()
-Groq API
-Sign up at Groq Cloud
 
-Obtain your API key
+**Groq API**
+**Sign up at Groq Cloud**
 
-Add it to your .env file
+**Obtain your API key**
+
+**Add it to your .env file**
 
 ## 🚨 Security Notes
-Always set DEBUG=False in production
+**Always set DEBUG=False in production**
 
-Use strong secret keys
+**Use strong secret keys**
 
-Regularly rotate API keys
+**Regularly rotate API keys**
 
-Monitor security logs
+**Monitor security**
 
-Keep dependencies updated
+**Keep dependencies updated**
 
 ## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+**This project is licensed under the MIT License - see the LICENSE file for details.**
 
 ## 🤝 Contributing
-We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
+**We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.**
 
-Agent Auth: Intelligent authentication security, powered by Agentic Postgres.
+**Agent Auth: Intelligent authentication security, powered by Agentic Postgres.**
