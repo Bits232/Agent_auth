@@ -1,0 +1,141 @@
+<!-- templates/landing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic Security Demo — AI-Powered Protection</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animated-gradient {
+      background: linear-gradient(120deg, #4f46e5, #9333ea, #14b8a6);
+      background-size: 300% 300%;
+      animation: gradientShift 12s ease infinite;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+   
+    
+    .shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .shine::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 60%
+      );
+      transform: rotate(25deg);
+      animation: shineAnim 5s infinite;
+    }
+    @keyframes shineAnim {
+      0% { transform: translateX(-100%) rotate(25deg); }
+      100% { transform: translateX(100%) rotate(25deg); }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-gray-950 text-white">
+  <!-- Hero Section -->
+  <section class="animated-gradient flex flex-col items-center justify-center min-h-screen text-center px-6 relative">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 max-w-6xl mx-auto">
+      <!-- Animated Shield -->
+      <div class="mb-8 animate-pulse">
+        <div class="inline-block p-6 rounded-full glass glow">
+          <i class="fas fa-shield-virus text-white text-6xl"></i>
+        </div>
+      </div>
+
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+        Agentic <span class="text-emerald-300">Security</span>
+      </h1>
+
+      <p class="text-lg md:text-2xl text-white/90 mb-6 max-w-3xl mx-auto">
+        Real-time AI threat detection powered by <span class="font-semibold">Tiger Agentic Postgres</span>
+        and advanced <span class="font-semibold">pg_textsearch BM25</span>.
+      </p>
+
+      <p class="text-md md:text-lg text-white/80 mb-12 max-w-2xl mx-auto">
+        Experience the evolution of cybersecurity — dynamic, adaptive, and powered by intelligent AI.
+      </p>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="{% url 'demo' %}" 
+           class="shine bg-emerald-400 text-gray-900 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-lg">
+          🚀 Launch Live Demo
+        </a>
+        <a href="#features" 
+           class="bg-white/10 px-10 py-4 rounded-full font-semibold text-white hover:bg-white/20 transition-all border border-white/20">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Floating glow -->
+      <div class="absolute top-1/3 left-1/4 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl opacity-40"></div>
+      <div class="absolute bottom-10 right-1/4 w-60 h-60 bg-emerald-400/30 rounded-full blur-3xl opacity-40"></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-24 bg-gray-950 relative">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">Why Choose Agentic Security?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="glass rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 glow">
+          <i class="fas fa-brain text-4xl mb-4 text-purple-400"></i>
+          <h3 class="text-2xl font-bold mb-3">Intelligent Detection</h3>
+          <p class="text-white/80">
+            BM25 and semantic search detect even disguised attack attempts with high accuracy.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 glow">
+          <i class="fas fa-bolt text-4xl mb-4 text-emerald-400"></i>
+          <h3 class="text-2xl font-bold mb-3">Instant AI Response</h3>
+          <p class="text-white/80">
+            Real-time pattern recognition powered by Postgres AI agents — no delay, no compromise.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 glow">
+          <i class="fas fa-database text-4xl mb-4 text-sky-400"></i>
+          <h3 class="text-2xl font-bold mb-3">Agentic Postgres</h3>
+          <p class="text-white/80">
+            Built with Tiger’s AI-ready Postgres extensions for autonomous security intelligence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 text-center text-white/70 text-sm">
+    <p>© 2025 Agentic Security Demo — Built with ❤️ using Postgres + AI</p>
+  </footer>
+</body>
+</html>
+
+
+
